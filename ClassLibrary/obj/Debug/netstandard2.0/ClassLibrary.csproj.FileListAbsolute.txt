@@ -1,0 +1,16 @@
+D:\Study\2 курс\OOП\WEB API\WebApiProject\ClassLibrary\bin\Debug\netstandard2.0\ClassLibrary.deps.json
+D:\Study\2 курс\OOП\WEB API\WebApiProject\ClassLibrary\bin\Debug\netstandard2.0\ClassLibrary.dll
+D:\Study\2 курс\OOП\WEB API\WebApiProject\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.csprojAssemblyReference.cache
+D:\Study\2 курс\OOП\WEB API\WebApiProject\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.AssemblyInfoInputs.cache
+D:\Study\2 курс\OOП\WEB API\WebApiProject\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.AssemblyInfo.cs
+D:\Study\2 курс\OOП\WEB API\WebApiProject\ClassLibrary\bin\Debug\netstandard2.0\ClassLibrary.pdb
+D:\Study\2 курс\OOП\WEB API\WebApiProject\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.dll
+D:\Study\2 курс\OOП\WEB API\WebApiProject\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.pdb
+D:\Study\2 курс\OOП\WEB API\MyProjectV3\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.csprojAssemblyReference.cache
+D:\Study\2 курс\OOП\WEB API\MyProjectV3\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.AssemblyInfoInputs.cache
+D:\Study\2 курс\OOП\WEB API\MyProjectV3\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.AssemblyInfo.cs
+D:\Study\2 курс\OOП\WEB API\MyProjectV3\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.dll
+D:\Study\2 курс\OOП\WEB API\MyProjectV3\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.pdb
+D:\Study\2 курс\OOП\WEB API\MyProjectV3\ClassLibrary\bin\Debug\netstandard2.0\ClassLibrary.deps.json
+D:\Study\2 курс\OOП\WEB API\MyProjectV3\ClassLibrary\bin\Debug\netstandard2.0\ClassLibrary.dll
+D:\Study\2 курс\OOП\WEB API\MyProjectV3\ClassLibrary\bin\Debug\netstandard2.0\ClassLibrary.pdb

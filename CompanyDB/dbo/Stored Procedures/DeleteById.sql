@@ -1,0 +1,7 @@
+﻿
+CREATE PROCEDURE DeleteById
+	@id int
+AS
+BEGIN
+	DELETE FROM Orders WHERE Id = @id
+END
