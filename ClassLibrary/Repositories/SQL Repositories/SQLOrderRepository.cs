@@ -38,18 +38,6 @@ namespace ClassLibrary.Repositories.SQL_Repositories
             }
         }
 
-        public Order Get(int Id)
-        {
-            var query = "ReadById";
-
-            using (var db = _connectionFactory.GetSqlConnection)
-            {
-                return db.Query<Order>(query,
-                    new { id = Id },
-                    commandType: CommandType.StoredProcedure).FirstOrDefault();
-            }
-        }
-
         public void Update(Order order)
         {
             using (var db = _connectionFactory.GetSqlConnection)

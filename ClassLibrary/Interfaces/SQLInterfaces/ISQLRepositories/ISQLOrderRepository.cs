@@ -7,7 +7,6 @@ namespace ClassLibrary.Interfaces.SQLInterfaces
 {
     public interface ISQLOrderRepository : IGenericRepository<Order, int>
     {
-        Order Get(int id);  
         int Add(Order order);
         void Update(Order order);
         void Delete(int id);

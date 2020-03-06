@@ -8,5 +8,6 @@ namespace ClassLibrary.Interfaces
     public interface IGenericRepository<TEntity, TId> where TEntity : IEntity<TId>
     {
         IEnumerable<TEntity> GetAll();
+        TEntity Get(int id);
     }
 }

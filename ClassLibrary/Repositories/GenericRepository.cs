@@ -5,6 +5,7 @@ using ClassLibrary.Interfaces;
 using ClassLibrary.Entities.EntityInterface;
 using Dapper;
 using System.Data;
+using System.Linq;
 
 namespace ClassLibrary.Repositories
 {
@@ -28,6 +29,18 @@ namespace ClassLibrary.Repositories
                 return db.Query<TEntity>(query,
                     new { TableName = _tableName },
                     commandType: CommandType.StoredProcedure);
+            }
+        }
+
+        public TEntity Get(int Id)
+        {
+            var query = "ReadById";
+
+            using (var db = _connectionFactory.GetSqlConnection)
+            {
+                return db.Query<TEntity>(query,
+                    new { id = Id },
+                    commandType: CommandType.StoredProcedure).FirstOrDefault();
             }
         }
 
