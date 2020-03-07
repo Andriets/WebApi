@@ -6,6 +6,7 @@ using ClassLibrary.Entities.EntityInterface;
 using Dapper;
 using System.Data;
 using System.Linq;
+using System.Reflection;
 
 namespace ClassLibrary.Repositories
 {
@@ -44,6 +45,25 @@ namespace ClassLibrary.Repositories
             }
         }
 
+        public void Delete(int id)
+        {
+            using (var db = _connectionFactory.GetSqlConnection)
+            {
+                var query = "DeleteByIdFromTable";
+                var result = db.Execute(
+                    sql: query,
+                    param: new { TableName = _tableName, Id = id },
+                    commandType: CommandType.StoredProcedure);
+            }
 
+        }
+
+        private IEnumerable<string> GetColumns()
+        {
+            return typeof(TEntity)
+                    .GetProperties()
+                    .Where(e => e.Name != "Id" && !e.PropertyType.GetTypeInfo().IsGenericType)
+                    .Select(e => e.Name);
+        }
     }
 }

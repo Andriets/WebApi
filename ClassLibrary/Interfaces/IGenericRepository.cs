@@ -9,5 +9,6 @@ namespace ClassLibrary.Interfaces
     {
         IEnumerable<TEntity> GetAll();
         TEntity Get(int id);
+        void Delete(int id);
     }
 }

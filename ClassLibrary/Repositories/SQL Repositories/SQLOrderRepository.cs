@@ -56,7 +56,7 @@ namespace ClassLibrary.Repositories.SQL_Repositories
             }
         }
 
-        public void Delete(int Id)
+/*        public void Delete(int Id)
         {
             using (var db = _connectionFactory.GetSqlConnection)
             {
@@ -72,6 +72,6 @@ namespace ClassLibrary.Repositories.SQL_Repositories
                     param: Id,
                     commandType: CommandType.Text);
             }
-        }
+        }*/
     }
 }
