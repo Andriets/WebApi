@@ -17,6 +17,7 @@ using ClassLibrary.Interfaces.SQLInterfaces;
 using ClassLibrary.Repositories.SQL_Repositories;
 using ClassLibrary.Service.SQL_Services;
 using ClassLibrary.UOW;
+using ClassLibrary.Interfaces.SQLInterfaces.ISQLRepositories;
 
 namespace MyProjectV3
 {
@@ -36,9 +37,11 @@ namespace MyProjectV3
 
             #region SQL repositories
             services.AddTransient<ISQLOrderRepository, SQLOrderRepository>();
-            #endregion
+            services.AddTransient<ISQLUserRepository, SQLUserRepository>();
+            #endregion  
 
             #region SQL services
+            services.AddTransient<ISQLUserService, SQLUserService>();
             services.AddTransient<ISQLOrderService, SQLOrderService>();
             #endregion
 
