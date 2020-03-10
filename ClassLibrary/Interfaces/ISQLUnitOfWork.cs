@@ -10,6 +10,8 @@ namespace ClassLibrary.Interfaces
     {
         ISQLOrderRepository SQLOrderRepository { get; }
         ISQLUserRepository SQLUserRepository { get; }
+        ISQLProductTypeRepository SQLProductTypeRepository { get; }
+        ISQLProductRepository SQLProductRepository { get; }
         void Complete();
     }
 }

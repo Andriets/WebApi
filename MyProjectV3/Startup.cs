@@ -38,11 +38,15 @@ namespace MyProjectV3
             #region SQL repositories
             services.AddTransient<ISQLOrderRepository, SQLOrderRepository>();
             services.AddTransient<ISQLUserRepository, SQLUserRepository>();
+            services.AddTransient<ISQLProductTypeRepository, SQLProductTypeRepository>();
+            services.AddTransient<ISQLProductRepository, SQLProductRepository>();
             #endregion  
 
             #region SQL services
             services.AddTransient<ISQLUserService, SQLUserService>();
             services.AddTransient<ISQLOrderService, SQLOrderService>();
+            services.AddTransient<ISQLProductTypeService, SQLProductTypeService>();
+            services.AddTransient<ISQLProductsService, SQLProductService>();
             #endregion
 
             services.AddTransient<ISQLUnitOfWork, UnitOfWork>();

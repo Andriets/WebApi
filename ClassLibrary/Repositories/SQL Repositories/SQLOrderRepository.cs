@@ -55,23 +55,5 @@ namespace ClassLibrary.Repositories.SQL_Repositories
                     commandType: CommandType.Text);
             }
         }
-
-/*        public void Delete(int Id)
-        {
-            using (var db = _connectionFactory.GetSqlConnection)
-            {
-                var query = "DeleteById";
-
-                var UnActivateStatement = db.Query<string>(
-                    sql: query,
-                    param: new { id = Id },
-                    commandType: CommandType.StoredProcedure).FirstOrDefault();
-
-                db.Execute(
-                    sql: UnActivateStatement,
-                    param: Id,
-                    commandType: CommandType.Text);
-            }
-        }*/
     }
 }

@@ -46,7 +46,7 @@ namespace MyProjectV3.Controllers
 
         [Route("User/{Id}")]
         [HttpDelete]
-        public void Delete([FromBody]int id)
+        public void Delete(int id)
         {
             _sqlUserService.DeleteUser(id);
         }

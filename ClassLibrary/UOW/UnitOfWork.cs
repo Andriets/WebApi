@@ -11,11 +11,18 @@ namespace ClassLibrary.UOW
     {
         private readonly ISQLOrderRepository _sqlOrderRepository;
         private readonly ISQLUserRepository _sqlUserRepository;
+        private readonly ISQLProductTypeRepository _sqlProductTypeRepository;
+        private readonly ISQLProductRepository _sqlProductRepository;
    
-        public UnitOfWork(ISQLOrderRepository sqlorderRepository, ISQLUserRepository sQLUserRepository)
+        public UnitOfWork(ISQLOrderRepository sqlorderRepository, 
+            ISQLUserRepository sQLUserRepository,
+            ISQLProductTypeRepository sQLProductTypeRepository,
+            ISQLProductRepository sQLProductRepository)
         {
             _sqlOrderRepository = sqlorderRepository;
             _sqlUserRepository = sQLUserRepository;
+            _sqlProductTypeRepository = sQLProductTypeRepository;
+            _sqlProductRepository = sQLProductRepository;
         }
 
         public ISQLOrderRepository SQLOrderRepository
@@ -31,6 +38,21 @@ namespace ClassLibrary.UOW
             get
             {
                 return _sqlUserRepository;
+            }
+        }
+
+        public ISQLProductTypeRepository SQLProductTypeRepository
+        {
+            get
+            {
+                return _sqlProductTypeRepository;
+            }
+        }
+        public ISQLProductRepository SQLProductRepository
+        {
+            get
+            {
+                return _sqlProductRepository;
             }
         }
 

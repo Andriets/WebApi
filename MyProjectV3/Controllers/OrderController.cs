@@ -46,7 +46,7 @@ namespace WebApiProject.Controllers
 
         [Route("Order/{Id}")]
         [HttpDelete]
-        public void Delete([FromBody]int id)
+        public void Delete(int id)
         {
             _sqlOrderService.DeleteOrder(id);
         }

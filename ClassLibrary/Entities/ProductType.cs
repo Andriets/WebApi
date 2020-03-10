@@ -5,7 +5,7 @@ using ClassLibrary.Entities.EntityInterface;
 
 namespace ClassLibrary.Entities
 {
-    class ProductType : IEntity<int>
+    public class ProductType : IEntity<int>
     {
         public int Id { get; set; }
         public string TypeName { get; set; }
